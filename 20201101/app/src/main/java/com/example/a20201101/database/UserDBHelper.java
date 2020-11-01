@@ -1,4 +1,4 @@
-package com.example.a20201018_applogin.database;
+package com.example.a20201101.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.example.a20201018_applogin.bean.UserInfo;
+import com.example.a20201101.bean.UserInfo;
 
 import java.util.ArrayList;
 
