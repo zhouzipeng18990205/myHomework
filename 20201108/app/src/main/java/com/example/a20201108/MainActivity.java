@@ -42,14 +42,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+       // 隐藏标题栏
+        getSupportActionBar().hide();
 
 
         TextView tv_title = findViewById(R.id.tv_title);
         tv_count = findViewById(R.id.tv_count);
         ll_channel = findViewById(R.id.ll_channel);
         findViewById(R.id.iv_cart).setOnClickListener(this);
-        tv_title.setText("手机商场");
+        tv_title.setText("周子彭的商场");
     }
 
     @Override
