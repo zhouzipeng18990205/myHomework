@@ -1,6 +1,7 @@
 package com.example.a20201108.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.viewpager.widget.PagerAdapter;
 
+import com.example.a20201108.MainActivity;
 import com.example.a20201108.R;
 
 import java.util.ArrayList;
@@ -51,8 +53,9 @@ public class LaunchSimpleAdapter extends PagerAdapter {
                 btn_start.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(mContext, "欢迎您开启美好生活",
-                                Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(mContext, MainActivity.class);
+                        mContext.startActivity(intent);
+
                     }
                 });
             }
